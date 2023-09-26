@@ -1,14 +1,45 @@
-@import "abstracts/breakpoints";
-@import "abstracts/colors";
-@import "layout/layouts";
-@import "abstracts/mixins";
-@import "abstracts/typography";
-@import "abstracts/utilities";
-@import "utilities/variables";
+@use 'abstracts/colors' as *;
+@use 'abstracts/type-scale' as *;
+@use 'abstracts/breakpoints' as *;
+@use 'layout/layouts' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/typography' as *;
+@use 'abstracts/utilities' as *;
+@use 'utilities/variables' as *;
 
 
-
-body {
-    background: $red;
+:root {
+    // for colors variables
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+    
+    // for font variables
+    @each $screen-size, $font-size in $type-scale {
+        @if $screen-size == small {
+            @each $size, $value in $font-size {
+                --fs-#{$size}: #{$value};
+            }
+        }@else {
+            @include breakpoint-up(medium) { //problem with media-query
+                @each $size, $value in $font-size {
+                    --fs-#{$size}: #{$value};
+                }
+            }
+        }
+    }    
 }
 
+
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+        .text-#{$color}-#{$shade} {
+            color: $value;
+        }
+        .bg-#{$color}-#{$shade} {
+            color: $value;
+        }
+    } 
+}

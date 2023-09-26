@@ -1,5 +1,110 @@
-body {
-  background: red;
+:root {
+  --clr-primary-100: hsl(0, 0%, 47%);
+  --clr-primary-200: hsl(0, 0%, 37%);
+  --clr-primary-300: hsl(0, 0%, 27%);
+  --clr-primary-400: hsl(0, 0%, 17%);
+  --clr-primary-500: hsl(0, 0%, 7%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 87%);
+  --clr-neutral-300: hsl(0, 0%, 80%);
+  --clr-neutral-700: hsl(0, 0%, 40%);
+  --clr-neutral-800: hsl(0, 0%, 30%);
+  --fs-300: 1rem;
+  --fs-400: 1.12rem;
+  --fs-500: 1.56rem;
+  --fs-600: 1.95rem;
+  --fs-700: 2.441rem;
+  --fs-800: 3.052rem;
+}
+@media (min-width: 40em) {
+  :root {
+    --fs-300: 1rem;
+    --fs-400: 1.425rem;
+    --fs-500: 2rem;
+    --fs-600: 2.827rem;
+    --fs-700: 4rem;
+    --fs-800: 5.653rem;
+  }
+}
+
+.text-primary-100 {
+  color: hsl(0, 0%, 47%);
+}
+
+.bg-primary-100 {
+  color: hsl(0, 0%, 47%);
+}
+
+.text-primary-200 {
+  color: hsl(0, 0%, 37%);
+}
+
+.bg-primary-200 {
+  color: hsl(0, 0%, 37%);
+}
+
+.text-primary-300 {
+  color: hsl(0, 0%, 27%);
+}
+
+.bg-primary-300 {
+  color: hsl(0, 0%, 27%);
+}
+
+.text-primary-400 {
+  color: hsl(0, 0%, 17%);
+}
+
+.bg-primary-400 {
+  color: hsl(0, 0%, 17%);
+}
+
+.text-primary-500 {
+  color: hsl(0, 0%, 7%);
+}
+
+.bg-primary-500 {
+  color: hsl(0, 0%, 7%);
+}
+
+.text-neutral-100 {
+  color: hsl(0, 0%, 100%);
+}
+
+.bg-neutral-100 {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-neutral-200 {
+  color: hsl(0, 0%, 87%);
+}
+
+.bg-neutral-200 {
+  color: hsl(0, 0%, 87%);
+}
+
+.text-neutral-300 {
+  color: hsl(0, 0%, 80%);
+}
+
+.bg-neutral-300 {
+  color: hsl(0, 0%, 80%);
+}
+
+.text-neutral-700 {
+  color: hsl(0, 0%, 40%);
+}
+
+.bg-neutral-700 {
+  color: hsl(0, 0%, 40%);
+}
+
+.text-neutral-800 {
+  color: hsl(0, 0%, 30%);
+}
+
+.bg-neutral-800 {
+  color: hsl(0, 0%, 30%);
 }
 
 /*# sourceMappingURL=main.css.map */

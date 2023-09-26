@@ -2,9 +2,7 @@
   "name": "-projects",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-  
-  },
+  "scripts": {},
   "keywords": [],
   "author": "SamiUllah",
   "license": "ISC",
